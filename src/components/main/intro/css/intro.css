@@ -1,0 +1,143 @@
+.site-intro {
+  margin-bottom: 71px;
+}
+
+.intro-row {
+  display: flex;
+  column-gap: 40px;
+  justify-content: space-between;
+}
+
+.intro__content {
+  max-width: 506px;
+}
+
+.intro-content__title {
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 60px;
+
+  color: var(--text-color);
+}
+
+.intro-content__text {
+  margin-bottom: 38px;
+
+  color: var(--text-color);
+}
+
+.intro-content__btn {
+  padding: 10px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 208px;
+  min-height: 47px;
+
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+
+  color: var(--text-white);
+  background-color: var(--accent);
+  border-radius: 2px;
+  border: 1px solid transparent;
+
+  transition: all 0.3s ease-in;
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+  &:hover {
+    border-color: var(--accent);
+    background-color: transparent;
+    color: var(--accent);
+  }
+}
+
+.intro__img-wrapper {
+  position: relative;
+
+  width: 243px;
+  height: 243px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 5px;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--secondry);
+    border-radius: 100%;
+    z-index: -1;
+  }
+}
+
+.intro__img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+/* tablet */
+@media (max-width: 840px) {
+  .intro-row {
+    column-gap: 20px;
+  }
+
+  .intro__content {
+    max-width: 406px;
+  }
+
+  .intro-content__title {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+
+  .intro-content__text {
+    margin-bottom: 35px;
+  }
+}
+
+/* mobile */
+@media (max-width: 720px) {
+  .site-intro {
+    margin-bottom: 58px;
+  }
+
+  .intro-row {
+    display: flex;
+    row-gap: 34px;
+    column-gap: unset;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+
+  .intro__content {
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .intro-content__title {
+    margin-bottom: 20px;
+
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .intro-content__text {
+    margin-bottom: 27px;
+  }
+}

@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Heebo";
+  src: local("Heebo-Regular"), url("Heebo-Regular.woff2") format("woff2"),
+    url("Heebo-Regular.woff") format("woff"),
+    url("Heebo-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: local("Heebo-Medium"), url("Heebo-Medium.woff2") format("woff2"),
+    url("Heebo-Medium.woff") format("woff"),
+    url("Heebo-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: local("Heebo Bold"), local("Heebo-Bold"),
+  url("Heebo-Bold.woff") format("woff"),
+  url("Heebo-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Heebo";
+  src: local("Heebo-Black"), url("Heebo-Black.woff2") format("woff2"),
+    url("Heebo-Black.woff") format("woff"),
+    url("Heebo-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
