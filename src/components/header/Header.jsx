@@ -1,33 +1,62 @@
-import "./css/header.css";
+import { NavLink } from "react-router-dom";
+
+import "./header.css";
 
 const Header = () => {
+  const submit = () => {
+    const headerNav = document.querySelector(".header__nav");
+    headerNav.classList.toggle("header__nav--mobile");
+  };
+
+  const activeLink = "active";
+  const normalLink = "header__link";
   return (
     <header className="site-header">
       <div className="container">
         <nav className="header__nav">
           <ul className="header__list">
             <li className="header__item">
-              <a href="#!" className="header__link" id="active">
+              <NavLink
+                to={"/"}
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="header__item">
-              <a href="#!" className="header__link">
+              <NavLink
+                to={"/blog"}
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
                 Blog
-              </a>
+              </NavLink>
             </li>
             <li className="header__item">
-              <a href="#!" className="header__link">
+              <NavLink
+                to={"/work"}
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
                 Works
-              </a>
+              </NavLink>
             </li>
             <li className="header__item">
-              <a href="#!" className="header__link">
+              <NavLink
+                to={"/detail"}
+                className={({ isActive }) =>
+                  isActive ? activeLink : normalLink
+                }
+              >
                 Detail
-              </a>
+              </NavLink>
             </li>
           </ul>
-          <button type="button" className="header__menu-btn">
+          <button type="button" className="header__menu-btn" onClick={submit}>
             <span></span>
           </button>
         </nav>
